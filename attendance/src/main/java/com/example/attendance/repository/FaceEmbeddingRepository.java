@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.attendance.entity.FaceEmbedding;
+import com.example.attendance.model.FaceEmbedding;
 
 public interface FaceEmbeddingRepository extends JpaRepository<FaceEmbedding, Long> {
     List<FaceEmbedding> findByEmployeeId(Long employeeId);
